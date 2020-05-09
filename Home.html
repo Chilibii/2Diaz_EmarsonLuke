@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>HOME</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 5px;
+  margin: 0;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 12px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 20%;
+  height: 1500px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 1500px;
+  color:#404040;
+  font-style: bold;
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+
+
+
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #bbb;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+
+}
+</style>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <a href="Home.html" class="logo"> <img src="Images/PCNL.png" style="float: left" width="800"  height="80"></a>
+
+  <div class="header-right">
+    <a href="#About"></a><br>
+    <h2 style="color:#0000ff; float: right; font-family: monospace;"><cite>"We will make your future bright"</cite></h2>
+  </div>
+  <br>
+<br>
+    
+</div>
+
+
+
+
+
+<div class="topnav">
+  <a class="active" href="Home.html">HOME</a>
+  <a href="Admission.html">ADMISSION</a>
+  <a href="Guidelines.html">GUIDELINES</a>
+  <a href="Events.html">EVENTS</a>
+  <a href="Courses.html">COURSES</a>
+  <a href="AboutUs.html">ABOUT US</a>
+
+
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+</div>
+<section>
+  <nav>
+ <center><hr>
+ 	<p><h3 style="font-family: monospace; font-size: 25px"><cite>Board Passers</cite></h3>
+ 	<hr>
+  			<p style="font-family: Arial">
+  			<b>CPA Board Passers</b>
+  			<br>Hernan L. Parrocha
+  			<br>Nemuel B. Oribello
+  			<br>Mark John D. Orencia
+  			<br>
+  			<br><b>Criminology Board Passers</b>
+  			<br>Jhebbie L. Doria
+  			<br>Queenvi T. Benedicto
+  			<br>Bernanrdo Casuga
+  			<br>Jonathan Diga
+  			<br>Frederick Domingo
+  			<br>Eugene Eugenio
+  			<br>Wilfredo Pozo
+  			<br>Kathreena Roma Asuncion
+  			<br>Marvin Aspiras
+  			<br>Romelo Mario Carriaga
+  			<br></p>
+  		<h3 style="font-family: monospace; font-size: 25px"><cite>LET Passers</cite></h3></p>
+  			<p style="font-family: Arial">
+  			<i><b>Bachelor of Elementary Education</b></i>
+  			<br>Ma. Virginia F. Regacho
+  			<br>Quenne Verly R. Comilang
+  			<br>Maribel B. Galera
+  			<br>Jezer O. Magnoaraart
+  			<br>Angelica L. Romero
+  			<br> Marilyn B. Tavares
+  			<br>
+  			<i><br><b>Bachelor of Secondary Education</b>
+  			<br><b>Major in English</b></i>
+  			<br>Noemi B. Calado
+  			<br>Ronadel P. Permejo
+  			<br>Errol A. Parocha
+  			<br>
+  			<i><br><b>Bachelor of Secondary Education</b>
+  			<br><b>Major in Filipino</b></i>
+  			<br>Jodelyn D. Abanez
+  			<br>Krizzle Mary E. Canave
+  			<br>jomari B. Banut
+  			<br>Melody L. Bartolome
+  			<br>Marnielyn A. Cavinta
+  			<br>Jonalyn P. Lacanas
+  			<br>Vanessa J. Naboa
+  			<br>Arvin D. Gali
+  			<br>Florean V. Selibio
+
+
+
+
+
+<hr>
+
+  </nav>
+  
+  <article>
+    <h1 style="font-size: 21px">Featured Stories</h1>
+<hr>
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <img src="Images/1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script></p>
+<br>
+<br>
+<p><h3>What does Philippine College of Northwestern Luzon stand for?</h3></p>
+<hr>
+<p><h5><blockquote>
+Philippine College of Northwestern Luzon (PCNL) is a private, non-sectarian college in Agoo, La Union. It offers four-year undergraduate programs and also technical-vocational programs that can be completed in less than a year. The bachelor's degree programs available are in Elementary and Secondary Education, Information Technology, Criminology, Accountancy, and Business Administration. The TVET programs offered by TESDA are Computer Hardware Servicing, Housekeeping, and Programming, all leading to a National Certificate (NC).</blockquote> </h5>
+<br>
+<br>
+<p><h3>What programs & courses does Philippine College of Northwestern Luzon offer?</h3></p>
+<hr>
+<p><h5><blockquote>
+Choosing the right program can help you set your future goals and visualize where you want to be. Whether you want to be an engineer, a teacher, an accountant, or you want to level up in your profession, making yourself informed with the right choices will surely back you up in the future. Are you ready to map your career with Philippine College of Northwestern Luzon? Make the best decision in choosing the right path for you, click through the list of programs offered by Philippine College of Northwestern Luzon below:</blockquote></h5></p>
+
+
+
+
+
+
+  </article>
+</section>
+
+<footer><br>
+
+  <table style="width: 100%">
+  	<tr>
+  		<th>Admissions and Records Center</th>
+  		<th>Web Portals</th>
+  		<th>Quick Access</th>
+  		<th>Contact Information</th>
+  	</tr>
+  	<tr>
+  		<td>Registrar</td>
+  		<td><a href="#currentstudent">Students Portal</td>
+  		<td><a href="#currentstudent">Campus Maps</td>
+  		<td>(074)123-4567
+  	</tr>
+  	<tr>
+  		<td>Tel#: (074)123-4567</td>
+  		<td><a href="#currentstudent">Current Student</td>
+  		<td rowspan="4"><a href="#currentstudent">Downloadble</td>
+  		<td rowspan="1"> San Antonio, Agoo La Union
+  	</td>
+  	</tr>
+  	<tr>
+  		<td>Call/Text: +639123456789</td>
+  		<td><a href="#currentstudent">New Student</td> 
+  	</tr>
+  	<tr>
+  		<td rowspan="1">Email Address:<a href="#currentstudent">registrar@pcnl.com
+  		<td><a href="#currentstudent">Faculty Portal</td>
+  		<td><a href="#currentstudent">Connect with US
+  	</tr>
+  	<tr>
+  		<td>@Student Accounts Office</td>
+  		<td><a href="#currentstudent">Online Evaluation</td>
+  		<td style="text-decoration-line: none">
+  			<a href="https://web.facebook.com/groups/363780617164706/"><img src="Icons/1.png" width="20" height="20"></a>
+  			<a href="https://web.facebook.com/groups/363780617164706/"><img src="Icons/2.png" width="20" height="20"></a>
+  			<a href="#currentstudent"><img src="Icons/3.png" width="20" height="20"></a>
+  			<a href="https://www.youtube.com/channel/UCDYkOSYbLEpZBDNX5cnZqzA"><img src="Icons/4.png" width="20" height="20"></a>
+  			<a href="#currentstudent"><img src="Icons/5.png" width="20" height="20"></a>
+
+
+
+  	<tr>
+  	</tr>
+
+  </table>
+ <p>
+ <br>
+ <br>
+Copyright 2019. Philippine Colleges of Northwestern Luzon. All rights reserved.<br>
+Develop by Lucas Quiming Ochoco Diaz
+</footer>
+
+</body>
+</html>
