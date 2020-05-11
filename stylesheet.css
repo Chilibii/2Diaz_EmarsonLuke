@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> LUCAS CSS </title>
+		<style type="text/css">
+
+			h1 {
+				font-family:courier, serif;
+				font-size: 20pt;
+				color:blue;
+				border-bottom: 2px solid blue;
+			}
+			p {
+				font-family: arial, verdana, serif;
+				font-size: 12pt;
+				color: orange;
+			}
+			.red_txt {
+				color: red
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1> LUCAS QUIMING CSS <h1>
+		<p>Welcome to my CSS styling. </p>
+		<p class=red_txt">Color Red.</p>
+	</body?
+</html>
